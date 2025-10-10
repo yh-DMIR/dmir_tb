@@ -83,8 +83,6 @@ if __name__ == '__main__':
 
     parser.add_argument('--inverse', action='store_true', help='inverse output data', default=False)
 
-    parser.add_argument('--random', default=True)
-
     args = parser.parse_args()
     args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
 
