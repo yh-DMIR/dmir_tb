@@ -42,13 +42,13 @@ class Model(nn.Module):
 
         self.final_mlp = nn.Sequential(nn.Linear(configs.pred_len, configs.pred_len))
 
-        if not self.random:
-            with torch.no_grad():
-                # 直接使用torch.eye创建单位矩阵
-                self.final_mlp[0].weight.data = torch.eye(self.c_in)
 
-                # 将偏置初始化为零
-                self.final_mlp[0].bias.data.zero_()
+        with torch.no_grad():
+            # 直接使用torch.eye创建单位矩阵
+            self.final_mlp[0].weight.data = torch.eye(self.c_in)
+
+            # 将偏置初始化为零
+            self.final_mlp[0].bias.data.zero_()
 
     def layers_init(self, configs):
         integrated_attention = [IntAttention(
