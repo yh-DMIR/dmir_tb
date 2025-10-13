@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f6a2a72a-45b8-4ef7-b39c-a1b46aa035cd" name="集群">
+        <fileTransfer rootFolder="/home/crc00006699/nsb/tbv1" accessType="SFTP" host="10.1.19.62" port="20008" sshConfigId="18cefb8d-845b-4070-9ceb-db03f216cfe9" sshConfig="crc00006699@10.1.19.62:20008 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
