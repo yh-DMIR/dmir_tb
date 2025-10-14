@@ -1,7 +1,0 @@
-Args in experiment:
-Namespace(activation='gelu', alpha=0.05, attn_dropout=0.15, batch_size=32, ca_layers=1, checkpoints='./checkpoints/', d_ff=128, d_model=128, data='Solar', data_path='solar_AL.txt', des='Exp', devices='0,1,2,3', dropout=0.0, embed='timeF', embedding_epochs=5, embedding_lr=0.0005, enc_in=137, features='M', freq='h', gpu=0, ia_layers=1, inverse=False, is_training=1, itr=1, label_len=48, learning_rate=0.0005, loss='MSE', lradj='type1', model='TimeBridge', model_id='Solar_720_720', n_heads=8, num_p=12, num_workers=10, output_attention=False, patience=15, pct_start=0.2, pd_layers=1, period=48, pred_len=720, revin=True, root_path='./data/Solar/', seasonal_patterns='Monthly', seq_len=720, stable_len=6, target='OT', train_epochs=100, use_gpu=True, use_multi_gpu=False)
-Use GPU: cuda:0
->>>>>>>start training : Solar_720_720_TimeBridge_Solar_bs32_ftM_sl720_ll48_pl720_dm128_nh8_ial1_pdl1_cal1_df128_ebtimeF_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
-train 35353
-val 4537
-test 9793
