@@ -136,6 +136,8 @@ def objective(trial):
 
     print(f"\n--- [Trial {trial.number}] 开始训练 ---")
     print(f"dataset: {args.data}")
+    print(f"seq_len: {args.seq_len}")
+    print(f"pred_len: {args.pred_len}")
     # 运行训练并获取最佳验证损失 (这依赖于第一步的修改)
     exp.train(setting,trial)
     # 运行测试并获取测试集的 mae 和 mse
