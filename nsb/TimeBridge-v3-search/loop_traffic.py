@@ -19,9 +19,9 @@ enc_in=862
 # 定义要搜索的参数网格
 batch_sizes = [24]
 learning_rates = [0.0002]
-ca_layers = [3]
+ca_layers = [3]  # 长期
 pd_layers = [1]
-ia_layers = [1]
+ia_layers = [1]  # 短期
 
 # 生成所有参数组合
 param_combinations = product(batch_sizes, learning_rates,ca_layers,pd_layers,ia_layers)
