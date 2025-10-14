@@ -19,15 +19,15 @@ enc_in=862
 # 定义要搜索的参数网格
 batch_sizes = [24]
 learning_rates = [0.0002]
-ca_layers = [3]  # 长期
+ca_layers = [3,4,5,6]  # 长期
 pd_layers = [1]
-ia_layers = [1]  # 短期
+ia_layers = [0,1,2,3]  # 短期
 
 # 生成所有参数组合
-param_combinations = product(batch_sizes, learning_rates,ca_layers,pd_layers,ia_layers)
+param_combinations = product(batch_sizes, learning_rates, ca_layers, pd_layers, ia_layers)
 
 # 遍历每个参数组合并执行命令
-for batch_size,lr,ca_layers,pd_layers,ia_layers in param_combinations:
+for batch_size, lr, ca_layers, pd_layers, ia_layers in param_combinations:
     print(f"\n===== 开始执行参数组合: batch_size={batch_size}, learning_rate={lr}=====")
 
     # 构建命令列表
