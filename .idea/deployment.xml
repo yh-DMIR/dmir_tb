@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData">
     <serverData>
+      <paths name="140">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="crc00006699@10.1.19.62:20008 password">
         <serverdata>
           <mappings>
@@ -49,14 +55,6 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
-=======
-  <component name="PublishConfigData" serverName="140" remoteFilesAllowedToDisappearOnAutoupload="false">
-    <serverData>
-      <paths name="140">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
->>>>>>> 830997f86fa02b5feb11cc2dcb81d08f2dc6b3a7
           </mappings>
         </serverdata>
       </paths>
