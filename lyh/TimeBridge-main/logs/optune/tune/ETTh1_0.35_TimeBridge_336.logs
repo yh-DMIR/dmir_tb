@@ -1,0 +1,92 @@
+
+--- [Trial 0] 参数 ---
+learning_rate=0.0001575308683692655, batch_size=48, ca_layers=3, ia_layers=3, attn_dropout=0.25, n_heads=16, num_p=12, alpha=0.2617131948975799, d_ff_multiplier=1
+Use GPU: cuda:0
+train 7585
+val 2545
+test 2545
+	iters: 100, epoch: 1 | loss: 2.1433940
+	speed: 0.2696s/iter; left time: 4232.2891s
+Epoch: 1 cost time: 42.429728507995605
+Epoch: 1, Steps: 158 | Train Loss: 2.3119889 Vali Loss: 1.2876741 Test Loss: 0.4586106
+Validation loss decreased (inf --> 1.287674).  Saving model ...
+	iters: 100, epoch: 2 | loss: 1.9956684
+	speed: 0.7803s/iter; left time: 12128.3242s
+Epoch: 2 cost time: 42.13924956321716
+Epoch: 2, Steps: 158 | Train Loss: 2.0242295 Vali Loss: 1.3493626 Test Loss: 0.4253743
+EarlyStopping counter: 1 out of 10
+	iters: 100, epoch: 3 | loss: 1.9467270
+	speed: 0.7853s/iter; left time: 12081.6017s
+Epoch: 3 cost time: 42.139909982681274
+Epoch: 3, Steps: 158 | Train Loss: 1.9835654 Vali Loss: 1.3499278 Test Loss: 0.4247086
+EarlyStopping counter: 2 out of 10
+	iters: 100, epoch: 4 | loss: 2.0000510
+	speed: 0.7937s/iter; left time: 12085.2641s
+Epoch: 4 cost time: 42.16261649131775
+Epoch: 4, Steps: 158 | Train Loss: 1.9675821 Vali Loss: 1.3609989 Test Loss: 0.4204833
+EarlyStopping counter: 3 out of 10
+	iters: 100, epoch: 5 | loss: 1.9335905
+	speed: 0.7840s/iter; left time: 11813.4076s
+Epoch: 5 cost time: 42.12554979324341
+Epoch: 5, Steps: 158 | Train Loss: 1.9578547 Vali Loss: 1.3587420 Test Loss: 0.4239549
+EarlyStopping counter: 4 out of 10
+	iters: 100, epoch: 6 | loss: 1.9270474
+	speed: 0.7781s/iter; left time: 11601.5256s
+Epoch: 6 cost time: 42.118788719177246
+Epoch: 6, Steps: 158 | Train Loss: 1.9527775 Vali Loss: 1.3613043 Test Loss: 0.4247661
+EarlyStopping counter: 5 out of 10
+	iters: 100, epoch: 7 | loss: 1.9673572
+	speed: 0.7763s/iter; left time: 11452.4758s
+Epoch: 7 cost time: 42.158371686935425
+Epoch: 7, Steps: 158 | Train Loss: 1.9499464 Vali Loss: 1.3681265 Test Loss: 0.4303720
+EarlyStopping counter: 6 out of 10
+	iters: 100, epoch: 8 | loss: 1.9791800
+	speed: 0.7966s/iter; left time: 11626.0316s
+Epoch: 8 cost time: 42.20173001289368
+Epoch: 8, Steps: 158 | Train Loss: 1.9485131 Vali Loss: 1.3678195 Test Loss: 0.4281413
+EarlyStopping counter: 7 out of 10
+	iters: 100, epoch: 9 | loss: 1.9808774
+	speed: 0.7987s/iter; left time: 11530.3098s
+Epoch: 9 cost time: 42.26380658149719
+Epoch: 9, Steps: 158 | Train Loss: 1.9476747 Vali Loss: 1.3699831 Test Loss: 0.4290297
+EarlyStopping counter: 8 out of 10
+	iters: 100, epoch: 10 | loss: 1.9740760
+	speed: 0.8069s/iter; left time: 11521.6974s
+Epoch: 10 cost time: 42.229156255722046
+Epoch: 10, Steps: 158 | Train Loss: 1.9472229 Vali Loss: 1.3698995 Test Loss: 0.4288435
+EarlyStopping counter: 9 out of 10
+	iters: 100, epoch: 11 | loss: 1.9853935
+	speed: 0.7945s/iter; left time: 11219.1348s
+Epoch: 11 cost time: 42.28915619850159
+Epoch: 11, Steps: 158 | Train Loss: 1.9471429 Vali Loss: 1.3690882 Test Loss: 0.4289178
+EarlyStopping counter: 10 out of 10
+Early stopping
+test 2545
+test shape: (2545, 1, 336, 7) (2545, 1, 336, 7)
+test shape: (2545, 336, 7) (2545, 336, 7)
+mse:0.45866110920906067, mae:0.4704016447067261
+rmse:0.6772452592849731, mape:0.7466368675231934, mspe:36709.25
+
+
+--- 优化完成 ---
+完成的试验次数:  1
+最佳试验:
+  > 最佳测试损失 (MAE+MSE): 0.9290627
+  > 对应的测试 MAE: 0.4704016
+  > 对应的测试 MSE: 0.4586611
+  > 最佳超参数 (Params): 
+    - learning_rate: 0.0001575308683692655
+    - batch_size: 48
+    - ca_layers: 3
+    - ia_layers: 3
+    - attn_dropout: 0.25
+    - n_heads: 16
+    - num_p: 12
+    - alpha: 0.2617131948975799
+    - d_ff_multiplier: 1
+
+准备将最佳结果写入到: optuna1/ETTh1_seqlen_720_predlen_336_results.txt
+最佳结果已成功写入！
+
+最佳结果已成功写入到: optuna1/ETTh1_seqlen_720_predlen_336_results.txt
+总耗时：906.26s
